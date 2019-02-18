@@ -104,3 +104,6 @@ Os dados do sistema foram obtidos do próprio site da Mobly. Existem 4167 produt
 Eu batizei o sistema de Virtual Stocker e utilizei um domínio que eu tenho (https://vstocker.com) para subir uma réplica em funcionamento do site.
 
 Obrigado!
+
+## Videos
+<blockquote class="embedly-card"><h4><a href="https://www.useloom.com/embed/97b6594b119e4d7f9afcab8546f15f44">Virtual Stocker</a></h4><p>Apesar de o áudio e o vídeo estarem um pouco desincronizados, eu fiz um video de demonstração da loja.</p></blockquote>
