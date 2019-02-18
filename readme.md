@@ -9,7 +9,7 @@ Este é o sistema de demonstração criado para a Mobly, criado à partir do Fra
 * Crie um vhost no **nginx** e aponte o endereço do vhost para o diretório raiz do sistema.
 * Apesar de não realizar nenhuma transação, o shopping roda em HTTPS.
 * Caso queiram testar as funcionalidades de "Esqueci Minha Senha", eu recomendo o uso da aplicação [Mailtrap](https://mailtrap.io) para o envio de emails e será necessária a configuração das seguintes variáveis no arquivo .env:
-```
+```ini
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
@@ -32,17 +32,17 @@ De acordo com a [documentação do Laravel](https://laravel.com/docs), estes sã
 Baixe este repositório e realize os procedimento abaixo:
 
 Todos os comandos serão feitos à partir da raíz do sistema setado no vhost (exemplificando):
-```
+```console
 root@mobly:/var/www/html/mobly#
 ```
 
 Baixe o arquivo de variáveis:
-```
+```console
 root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/37b2841861f97875edda7876bdc7aa90/raw/662aefe94a7b1d95fa2e4c610beff968225eff0f/.env
 ```
 
 Configure o arquivo .env com suas informações para o acesso com os dados do administrador e banco de dados:
-```
+```ini
 ...
 ADMIN_NAME="Nome do Usuário"
 ADMIN_EMAIL=email@email
@@ -55,27 +55,27 @@ DB_PASSWORD=SUA_SENHA_AQUI
 ```
 
 Dê a permissão correta aos diretórios:
-```
+```console
 root@mobly:/var/www/html/mobly# chmod -R 777 bootstrap/cache/ storage/
 ```
 
 Gere a secret key da aplicação
-```
+```console
 root@mobly:/var/www/html/mobly# php artisan key:generate
 ```
 
 Rode as migrations
-```
+```console
 root@mobly:/var/www/html/mobly# php artisan migrate:fresh --seed
 ```
 
 Baixe o arquivo SQL contendo os dados para teste
-```
+```console
 root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/272736bf9f96c29098e8a6be880ea87c/raw/d9af008744ba7ac43695dd82e782209969eb2446/dump_data.sql
 ```
 
 Importe o arquivo SQL para seu banco de dados
-```
+```console
 root@mobly:/var/www/html/mobly# mysql -u SEU_USER_AQUI -h SEU_SERVER_AQUI  -p SEU_BANCO_AQUI < dump_data.sql
 ```
 
