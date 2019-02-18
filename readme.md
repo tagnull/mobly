@@ -18,7 +18,7 @@ Todos os comandos serão feitos à partir da raíz do sistema setado no vhost (e
 root@mobly:/var/www/html/mobly#
 ```
 
-Baixe o arquivo de variáveis: (https://gist.githubusercontent.com/tagnull/37b2841861f97875edda7876bdc7aa90/raw/bd997fae3e9f0fdb786c0cc4c9a859174a05a511/.env):
+Baixe o arquivo de variáveis:
 ```
 root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/37b2841861f97875edda7876bdc7aa90/raw/bd997fae3e9f0fdb786c0cc4c9a859174a05a511/.env
 ```
@@ -76,6 +76,7 @@ Estas são algumas das funções do sistema:
 * Aplicação multi idiomas
 * Quick view do produto
 * e mais...
+
 Existem alguns elementos da tela que não tem funcionalidade, estão apenas para preenchimento de espaço, ex: Assinatura de Newsletter no rodapé, cores e tamanhos dos produtos na página de visualização do produto.
 
 Os dados do sistema foram obtidos do próprio site da Mobly. Existem 4167 produtos cadastrados em várias categorias.
