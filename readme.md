@@ -1,17 +1,23 @@
 <p align="center"><img src="https://vstocker.com/assets/images/logos/vstocker_black.png"></p>
 
 ## Virtual Stocker
-
 Este é o sistema de demonstração criado para a Mobly, criado à partir do Framework PHP Laravel 5.7.25.
 
 
-## Instalando
-
-Baixe este repositório e realize os procedimento abaixo:
-* Apenas para reforçar, é necessário que você tenha o **MySQL** instalado (local ou remoto) e um web server. Eu recomendo o **nginx**.
+## Recomendações
+* É necessário que você tenha o **MySQL** instalado (local ou remoto) e um web server. Eu recomendo o **nginx**.
 * Crie um vhost no **nginx** e aponte o endereço do vhost para o diretório raiz do sistema.
 * Apesar de não realizar nenhuma transação, o shopping roda em HTTPS.
+* Caso queiram testar as funcionalidades de "Esqueci Minha Senha", eu recomendo o uso da aplicação [Mailtrap](https://mailtrap.io) para o envio de emails e será necessária a configuração das seguintes variáveis no arquivo .env:
+```
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=SEU_TOKEN_USERNAME
+MAIL_PASSWORD=SEU_TOKEN_PASSWORD
+```
 
+## Instalando
 De acordo com a [documentação do Laravel](https://laravel.com/docs), estes são os requerimentos necessários para rodar o Framework:
 * PHP >= 7.1.3
 * OpenSSL PHP Extension
@@ -22,6 +28,8 @@ De acordo com a [documentação do Laravel](https://laravel.com/docs), estes sã
 * Ctype PHP Extension
 * JSON PHP Extension
 * BCMath PHP Extension
+
+Baixe este repositório e realize os procedimento abaixo:
 
 Todos os comandos serão feitos à partir da raíz do sistema setado no vhost (exemplificando):
 ```
