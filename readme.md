@@ -38,7 +38,7 @@ root@mobly:/var/www/html/mobly#
 
 Baixe o arquivo de variáveis:
 ```
-root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/37b2841861f97875edda7876bdc7aa90/raw/bd997fae3e9f0fdb786c0cc4c9a859174a05a511/.env
+root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/37b2841861f97875edda7876bdc7aa90/raw/662aefe94a7b1d95fa2e4c610beff968225eff0f/.env
 ```
 
 Configure o arquivo .env com suas informações para o acesso com os dados do administrador e banco de dados:
