@@ -1,4 +1,6 @@
-## Mobly Shopping
+<p align="center"><img src="https://vstocker.com/assets/images/logos/vstocker_black.png"></p>
+
+## Virtual Stocker
 
 Este é o sistema de demonstração criado para a Mobly, criado à partir do Framework PHP Laravel 5.7.25.
 
