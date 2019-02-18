@@ -43,12 +43,12 @@ root@mobly:/var/www/html/mobly# chmod -R 777 bootstrap/cache/ storage/
 
 Gere a secret key da aplicação
 ```
-php artisan key:generate
+root@mobly:/var/www/html/mobly# php artisan key:generate
 ```
 
 Rode as migrations
 ```
-php artisan migrate:fresh --seed
+root@mobly:/var/www/html/mobly# php artisan migrate:fresh --seed
 ```
 
 Baixe o arquivo SQL contendo os dados para teste
@@ -58,7 +58,7 @@ root@mobly:/var/www/html/mobly# wget https://gist.githubusercontent.com/tagnull/
 
 Importe o arquivo SQL para seu banco de dados
 ```
-mysql -u SEU_USER_AQUI -h SEU_SERVER_AQUI  -p SEU_BANCO_AQUI < dump_data.sql
+root@mobly:/var/www/html/mobly# mysql -u SEU_USER_AQUI -h SEU_SERVER_AQUI  -p SEU_BANCO_AQUI < dump_data.sql
 ```
 
 ## Ready to go!
