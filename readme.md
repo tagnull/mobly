@@ -9,7 +9,11 @@ Este é o sistema de demonstração criado para a Mobly, criado à partir do Fra
 
 Baixe este repositório e realize os procedimento abaixo:
 
-Todos os comandos serão feitos à partir da raíz do sistema (exemplificando):
+* Apenas para reforçar, é necessário que você tenha o **MySQL** instalado (local ou remoto) e um web server. Eu recomendo o **nginx**.
+* Crie um vhost no **nginx** e aponte o endereço do vhost para o diretório raiz do sistema.
+* Apesar de não realizar nenhuma transação, o shopping roda em HTTPS.
+
+Todos os comandos serão feitos à partir da raíz do sistema setado no vhost (exemplificando):
 ```
 root@mobly:/var/www/html/mobly#
 ```
@@ -56,10 +60,6 @@ Importe o arquivo SQL para seu banco de dados
 ```
 mysql -u SEU_USER_AQUI -h SEU_SERVER_AQUI  -p SEU_BANCO_AQUI < dump_data.sql
 ```
-
-* Apenas para reforçar, é necessário que você tenha o **MySQL** instalado (local ou remoto) e um web server. Eu recomendo o **nginx**.
-** Crie um vhost no **nginx** e aponte o endereço do vhost para o diretório raiz do sistema.
-*** Apesar de não realizar nenhuma transação, o shopping roda em HTTPS.
 
 ## Ready to go!
 Agora você pode acessar o sistema à partir do vhost criado.
