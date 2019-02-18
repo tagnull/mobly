@@ -97,6 +97,8 @@ Estas são algumas das funções do sistema:
 
 Existem alguns elementos da tela que não tem funcionalidade, estão apenas para preenchimento de espaço, ex: Assinatura de Newsletter no rodapé, cores e tamanhos dos produtos na página de visualização do produto.
 
+* O Frontend da loja virtual é baseado no tema 'Pebona' para a Prestashop.
+
 Os dados do sistema foram obtidos do próprio site da Mobly. Existem 4167 produtos cadastrados em várias categorias.
 
 Eu batizei o sistema de Virtual Stocker e utilizei um domínio que eu tenho (https://vstocker.com) para subir uma réplica em funcionamento do site.
