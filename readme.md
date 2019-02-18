@@ -8,10 +8,20 @@ Este é o sistema de demonstração criado para a Mobly, criado à partir do Fra
 ## Instalando
 
 Baixe este repositório e realize os procedimento abaixo:
-
 * Apenas para reforçar, é necessário que você tenha o **MySQL** instalado (local ou remoto) e um web server. Eu recomendo o **nginx**.
 * Crie um vhost no **nginx** e aponte o endereço do vhost para o diretório raiz do sistema.
 * Apesar de não realizar nenhuma transação, o shopping roda em HTTPS.
+
+De acordo com a [documentação do Laravel](https://laravel.com/docs), estes são os requerimentos necessários para rodar o Framework:
+* PHP >= 7.1.3
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
+* Ctype PHP Extension
+* JSON PHP Extension
+* BCMath PHP Extension
 
 Todos os comandos serão feitos à partir da raíz do sistema setado no vhost (exemplificando):
 ```
